@@ -30,7 +30,7 @@ export default function Store() {
           style={{fontSize:"22px",fontWeight:"bold",overflow:"hidden"}} className='px-1'
            direction="left"
                  behavior="scroll"
-                 loop=""><h1>UNLOCK YOUR SEXYNESS WITH OUR UNIQUE BRAND</h1></marquee>
+                 loop=""><h1>UNLOCK YOUR SEXYNESS WITH OUR UNIQUE BRAND !</h1></marquee>
       </motion.div>
         <div className="products">
           {PRODUCTS.map ((product) => (
