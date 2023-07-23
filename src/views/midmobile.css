@@ -1,0 +1,250 @@
+@media only screen and (min-width: 500px) and (max-width: 541px) {
+            
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    
+    
+}
+.link{
+    color: #000;
+align-items: center;
+padding-top: 5px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hello{
+    background-color: rgb(66, 52, 52);
+}
+.nav-content{
+    border-bottom: 1px solid rgb(222, 219, 219);
+    border-top: 1px solid rgb(222, 219, 219);
+    /* background-color: rgb(157, 151, 151); */
+}
+.nav-container{
+    /* margin-top: -100px; */
+    position: fixed;
+    top: 90px;
+    width: 100%;
+    height:  100px;
+    background-color: rgb(66, 52, 52);
+    margin-bottom: 90px;
+
+}
+.banner-container{
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    /* background-color: rgb(66, 52, 52); */
+
+    
+
+}
+.banner-video{
+      /* margin-top: 75px; */
+
+    width: 100%;
+    height: 480px ;
+   
+    object-fit: cover;
+
+ }
+
+/* .overlay:before {
+        content: '';
+        height: 555px ;
+        height: 100vh;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      
+
+} */
+.about-video{
+    width: 85%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    left: 50px;
+}
+
+.cartegories-container{
+    color: white;
+    background-color: rgb(66, 52, 52);
+    position: relative;
+    padding-top: 5px;
+    margin-top: -6px;
+    border-bottom: 2px solid gray;
+    
+
+}
+.foot-container{
+    background-color: rgb(157, 151, 151);
+}
+.sec{
+    height: 950px !important;
+}
+.sec2{
+    margin-top: -370px !important;
+}
+.sec3{
+    margin-top: -370px !important;
+}
+.fec{
+    height: 1020px !important;
+}
+.about-container{
+    background-color: rgb(66, 52, 52);
+    color: white;
+    border-bottom: 2px solid gray;
+
+}
+.display-container{
+    background-color: rgb(66, 52, 52);
+    color: white;
+}
+.contact{
+    background-color: black;
+
+
+}
+.abt{
+    position: relative;
+    left:  0px;
+    text-align: center;
+}
+.display-video{
+    width: 20%;
+    max-inline-size: 140%;
+  block-size: auto;
+  
+ 
+    
+}
+.carousel{
+    overflow: hidden;
+    cursor: grab;
+    width: 100%;
+        background-color: rgb(66, 52, 52);
+
+     
+     
+      
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+  }
+  .span{
+    padding: 0 5px;
+    color: whitesmoke;
+  }
+  .products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    /* overflow: hidden; */
+  }
+  
+  .item-container {
+    border-radius: 15px;
+    width: 100%;
+    /* height: 350px; */
+    display: flex;
+    margin: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+  
+  .product .description {
+    text-align: center;
+  }
+  
+  .product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+  }
+
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cartItem img {
+    margin: 0 20px;
+  }
+  
+  .cartItem .description  {
+    width: 100%;
+    font-size: 20px;
+  }
+  .description{
+    position: relative;
+    right: 4%;
+    line-height: 2px;
+    /* top: 50px; */
+  }
+  .par{
+    font-size: medium;
+  }
+  .btnn{
+    border: none;
+    background-color: rgb(66, 52, 52);
+    text-align: center;
+    width: 50px;
+
+  }
+  .countHandler{
+    background-color: rgb(66, 52, 52);
+    display: flex;
+    width: 50%;
+
+  }
+  .countHandler input {
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .checkout button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+}
