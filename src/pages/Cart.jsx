@@ -15,7 +15,7 @@ export default function Cart() {
 
 
   return (
-    <div className="cart mt-5">
+    <div className="cart carts mt-5">
     <div>
       <h1>HELLO DEAR !!!</h1>
     </div>
