@@ -147,8 +147,9 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr  ;
     place-items: center;
+    grid-gap: 10px;
     /* overflow: hidden; */
   }
   
@@ -161,6 +162,9 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-gap: 5px;
+    border-bottom: 2px solid black;
+    
   }
   
  
