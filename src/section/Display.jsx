@@ -68,12 +68,18 @@ export default function Display() {
               
             }}
           >
-            <motion.video src={Videourl3} autoPlay loop muted draggable className='display-video '></motion.video>
+            <motion.video preload="metadata" playsInline autoPlay loop muted draggable className='display-video '>
+              <source src={Videourl3} type="video/mp4"/>
+            </motion.video>
             <motion.img src={picurl2} alt="" draggable className='display-video ' />
-            <motion.video src={Videourl4} autoPlay loop muted draggable className='display-video '></motion.video>
+            <motion.video preload="metadata" playsInline  autoPlay loop muted draggable className='display-video '>
+              <source src={Videourl4} type="video/mp4"/>
+            </motion.video>
 
             <motion.img src={picurl1} alt="" draggable className='display-video ' />
-            <motion.video src={Videourl3} autoPlay loop muted draggable className='display-video '></motion.video>
+            <motion.video preload="metadata" playsInline src={Videourl3} autoPlay loop muted draggable className='display-video '>
+              <source preload="metadata" playsInline type="video/mp4" />
+            </motion.video>
             <motion.img src={picurl3} alt="" draggable className='display-video  ' />
 
             

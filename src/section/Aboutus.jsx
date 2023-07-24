@@ -33,7 +33,9 @@ export default function Aboutus() {
       </motion.header>
         <Row className='px-5' >
           <Col sm={6} md={6} lg={6} className='hmm p-1 pe-5 ' >
-          <video src={Videourl2}  autoPlay loop muted className='about-video border rounded'></video>
+          <video preload="metadata" playsInline  autoPlay loop muted className='about-video border rounded'>
+            <source src={Videourl2} type="video/mp4" />
+          </video>
 
           
           </Col>
