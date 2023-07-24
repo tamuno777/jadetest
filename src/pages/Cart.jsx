@@ -8,11 +8,12 @@ import { Storecontext } from '../context/Store-context'
 import Cartitem from './Cartitem'
 
 
+
 export default function Cart() {
   const {  cartItems , getTotalCartAmount, checkout } = useContext(Storecontext);
   const navigate = useNavigate();
   const totalAmount = getTotalCartAmount();
-
+  const empty = "/assets/emptycart.avif"
 
   return (
     <div className="cart carts mt-5">
@@ -45,7 +46,16 @@ export default function Cart() {
           </button>
         </div>
       ) : (
-        <h1> Your Shopping Cart is Empty</h1>
+       <div className='text-center mt-5' style={{width:"100%",height:"100%"}}>
+         <h1 className='mb-5'> Your Shopping Cart is Empty</h1>
+        <marquee direction="right"
+                 behavior="scroll"
+                 loop="infinity">
+                            <img src={empty} alt="" style={{width:"100%"}} className='empty' />
+
+                 </marquee>
+       </div>
+
       )}
     
     </div>

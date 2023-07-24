@@ -27,7 +27,7 @@ export default function Store() {
       </ParallaxText> */}
               {/* <motion.h1  > UNLOCK YOUR SEXYNESS WITH OUR UNIQUE BRAND </motion.h1> */}
           <marquee
-          style={{fontSize:"22px",fontWeight:"bold",overflow:"hidden"}} className='px-1'
+          style={{fontSize:"22px",fontWeight:"bold",overflow:"hidden"}} className='px-1 mar'
            direction="left"
                  behavior="scroll"
                  loop=""><h1>UNLOCK YOUR SEXYNESS WITH OUR UNIQUE BRAND !</h1></marquee>

@@ -10,7 +10,7 @@ export const Items = (props) => {
     return (
     // ui for each product card
     <div className="item-container ">
-      <img src={productImage} className='rounded' style={{width:"90%",height:"150px"}} />
+      <img src={productImage} className='rounded' style={{width:"80%",height:"50%"}} />
       <div className="description">
         <h1 className='pt-1' style={{fontSize:"15px"}}>
           <b>{productName}</b>

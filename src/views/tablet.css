@@ -164,9 +164,15 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-items: center;
     grid-gap: 5px;
     border-bottom: 2px solid black;
+    padding-bottom: 5px;
     
   }
-  
+  .store-container{
+    margin-top: 100px !important;
+    
+
+
+  }
  
   
   .product .description {

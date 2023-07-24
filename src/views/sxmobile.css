@@ -153,10 +153,17 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     grid-gap: 10px;
     /* overflow: hidden; */
   }
+  .store-container{
+    margin-top: 100px !important;
+    
+
+
+  }
   
   .item-container {
     border-radius: 15px;
     width: 100%;
+    margin-top: 100px !important;
     /* height: 350px; */
     display: flex;
     margin: 15%;

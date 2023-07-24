@@ -165,8 +165,16 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-items: center;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
+
     
   }
+  .store-container{
+    margin-top: 100px !important;
+    
+
+
+  }
+  
   
  
   
@@ -205,6 +213,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     /* margin-bottom: 50px !important; */
   }
   .carts {
@@ -214,6 +223,10 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     justify-content: center;
     align-items: center;
     margin-bottom: 70px !important;
+    /* height: 100% !important; */
+  }
+  .empty{
+    margin-bottom: 12%;
   }
   
   .cartItem {
