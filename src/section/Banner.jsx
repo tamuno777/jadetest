@@ -8,7 +8,7 @@ export default function Banner() {
     <div className='Banner-container'>
       <div className="overlay">
         <div className="Banner-content">
-        <video src={Videourl} autoPlay loop muted className='banner-video'></video>
+        <video src={Videourl} playsinline autoPlay loop muted className='banner-video'></video>
         </div>
       </div>
     </div>

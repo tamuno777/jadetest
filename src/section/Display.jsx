@@ -68,12 +68,12 @@ export default function Display() {
               
             }}
           >
-            <motion.video src={Videourl3} autoPlay loop muted draggable className='display-video '></motion.video>
+            <motion.video src={Videourl3} playsinline autoPlay loop muted draggable className='display-video '></motion.video>
             <motion.img src={picurl2} alt="" draggable className='display-video ' />
-            <motion.video src={Videourl4} autoPlay loop muted draggable className='display-video '></motion.video>
+            <motion.video src={Videourl4} playsinline autoPlay loop muted draggable className='display-video '></motion.video>
 
             <motion.img src={picurl1} alt="" draggable className='display-video ' />
-            <motion.video src={Videourl3} autoPlay loop muted draggable className='display-video '></motion.video>
+            <motion.video src={Videourl3} playsinline autoPlay loop muted draggable className='display-video '></motion.video>
             <motion.img src={picurl3} alt="" draggable className='display-video  ' />
 
             
