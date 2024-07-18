@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useContext } from "react";
+import { Storecontext } from "../context/Store-context";
+import "../views/desktop.css"
 
 export default function PaymentForm() {
+  const { cartItems, getTotalCartAmount, checkout } = useContext(Storecontext);
+  const totalAmount = getTotalCartAmount();
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    narration: '',
-    amount: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    narration: "",
+    amount: totalAmount,
   });
 
   const handleChange = (e) => {
@@ -22,20 +27,21 @@ export default function PaymentForm() {
     const { firstName, lastName, email, phone, narration, amount } = formData;
 
     const handler = FairsurePay.setup({
-      key: 'LIVE_EJXVHJWNXSPYNW4XBFR2', //this is a demo key.
+      key: "LIVE_EJXVHJWNXSPYNW4XBFR2", //this is a demo key.
       email,
       amount,
-      currency: 'NGN', // currency
+      currency: "NGN", // currency
       first_name: firstName,
       last_name: lastName,
       phone_number: phone, // customer’s phone number (optional)
       customerId: email,
       ref: `${Math.floor(Math.random() * 1000000000) + 1}`, // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
       narration,
-      callback_url: 'https://my-site.com.go', // specified redirect URL (optional)
-      meta: { // optional parameters
-        consumer_id: 'data.customer_id',
-        item_ref: 'payment.res',
+      callback_url: "https://my-site.com.go", // specified redirect URL (optional)
+      meta: {
+        // optional parameters
+        consumer_id: "data.customer_id",
+        item_ref: "payment.res",
       },
     });
 
@@ -43,9 +49,11 @@ export default function PaymentForm() {
   };
 
   return (
-    <div>
-      <form id="payment-form">
-        <input
+    <div style={{display:"flex",justifyContent:"center", height:"100dvh",width:"100%",alignItems:"center"}} className="text-center p-2 mt-5">
+      <form id="payment-form" >
+        <h1 className="my-1 py-3">PAY WITH FAIRSURE PAYMENT</h1>
+       <div className="" style={{display:"flex",flexDirection:"column",gap:"10px"}}>
+       <input
           type="text"
           className="form-control"
           id="firstName"
@@ -90,7 +98,7 @@ export default function PaymentForm() {
           value={formData.narration}
           onChange={handleChange}
         />
-        <input
+        {/* <input
           type="text"
           className="form-control"
           id="amount"
@@ -98,13 +106,17 @@ export default function PaymentForm() {
           name="amount"
           value={formData.amount}
           onChange={handleChange}
-        />
+        /> */}
+        <p  name="amount"
+          value={formData.amount}  className="form-control"
+          id="amount">N {totalAmount}</p>
         <input
           type="button"
           value="Submit"
           className="button"
           onClick={doFairSurePay}
         />
+       </div>
       </form>
     </div>
   );

@@ -10,6 +10,7 @@ import { AnimatePresence } from "framer-motion";
 import { useLocation } from 'react-router-dom';
 import './App.css'
 import { Storecontextprovider } from "./context/Store-context";
+import PaymentForm from "./pages/paymentform";
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/Store" element={<Store />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/Payment" element={<PaymentForm />} />
         </Routes>
         
 

@@ -2,12 +2,12 @@ import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container';
 
-import mod1 from '/assets/mod6.avif'
-import mod3 from '/assets/mod3.avif'
-import mod2 from '/assets/mod7.avif'
-import mod4 from '/assets/mod4.avif'
-import mod5 from '/assets/mod2.avif'
-import mod6 from '/assets/mod5.avif'
+import mod1 from '/assets/001.jpg'
+import mod3 from '/assets/002.jpg'
+import mod2 from '/assets/003.jpg'
+import mod4 from '/assets/004.jpg'
+import mod5 from '/assets/005.jpg'
+import mod6 from '/assets/006.jpg'
 import { motion } from 'framer-motion'
 
 
@@ -46,7 +46,7 @@ export default function Cartegories() {
               <img src={mod1} alt=""
               style={{
                 width:"100%",
-                height:"65%"
+                height:"30%"
                 
               }}
               className=' rounded'
@@ -57,7 +57,7 @@ export default function Cartegories() {
             <img src={mod2}alt="" 
              style={{
               width:"100%",
-              height:"65%"
+              height:"30%"
 
             }}
             className=' rounded'
@@ -70,7 +70,7 @@ export default function Cartegories() {
             <img src={mod3} alt=""
              style={{
               width:"100%",
-              height:"65%"
+              height:"30%"
 
             }}
             className=' rounded'

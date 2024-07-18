@@ -3,7 +3,7 @@ import React from 'react'
 // import Video from '../assets/instasave.MP4'
 
 export default function Banner() {
-  const Videourl = '/video/instasave1.MP4'
+  const Videourl = '/video/vid1.mp4'
   return (
     <div className='Banner-container'>
       <div className="overlay">

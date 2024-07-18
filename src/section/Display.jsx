@@ -16,12 +16,12 @@ export default function Display() {
    
  }, [])
 
-  const Videourl3 = '/video/instasave.MP4'
-  const Videourl4 = '/video/inst.MP4'
-  const picurl1 = '/assets/mod1.avif'
-  const picurl2 = '/assets/mode4.avif'
-  const picurl3 = '/assets/mode3.avif'
-  const picurl4 = '/assets/mode2.avif'
+  const Videourl3 = '/video/vid3.mp4'
+  const Videourl4 = '/video/vid2.mp4'
+  const picurl1 = '/assets/001.jpg'
+  const picurl2 = '/assets/003.jpg'
+  const picurl3 = '/assets/002.jpg'
+  const picurl4 = '/assets/004.jpg'
   return (
     <div className='display-container py-3'
     style={{

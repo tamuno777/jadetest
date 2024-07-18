@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 
 export default function Aboutus() {
-  const Videourl2 = '/video/inst.MP4'
+  const Videourl2 = '/video/vid4.mp4'
  
 
   return (
