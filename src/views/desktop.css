@@ -269,10 +269,3 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 10px;
     cursor: pointer;
   }
-
-  /* paymentform */
-  .paymentform{
-    width: 100;
-    height: auto;
-    background-color: pink;
-  }

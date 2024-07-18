@@ -15,7 +15,7 @@ export const Items = (props) => {
         <h1 className='pt-1' style={{fontSize:"15px"}}>
           <b>{productName}</b>
         </h1>
-        <p> N{price}</p>
+        <p> ${price}</p>
       </div>
       <button className="addToCartBttn mx-1" onClick={()=> addToCart(id)}>
         Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
